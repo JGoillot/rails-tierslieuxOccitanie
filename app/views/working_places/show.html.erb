@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row-md-6 row-md-offset-2">
+    <%= @working_place.name %> <br>
+    <%= @working_place.address %> <br>
+    <%= @working_place.contact_name %> <br>
+    <%= @working_place.phone %> <br>
+    <%= @working_place.mail %> <br>
+    <%= @working_place.website_url %> <br>
+    <%= @working_place.capacity %> <br>
+    <%= @working_place.oppening_time %> <br>
+    <%= @working_place.price %>
+  </div>
+
+  <%= link_to "Voir l'ensemble des tiers lieux", working_places_path , class: "btn btn-default" %>
+</div>

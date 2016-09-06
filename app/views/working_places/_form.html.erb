@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= simple_form_for @working_place do |f| %>
+      <%= f.error_notification %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :contact_name %>
+      <%= f.input :phone %>
+      <%= f.input :mail %>
+      <%= f.input :website_url %>
+      <%= f.input :capacity %>
+      <%= f.input :oppening_time %>
+      <%= f.input :price %>
+      <%= f.button :submit, class: "btn btn-primary" %>
+      <% end %>
+    </div>
+</div>
