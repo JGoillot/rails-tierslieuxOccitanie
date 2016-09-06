@@ -3,6 +3,9 @@ class CreateWorkingPlaces < ActiveRecord::Migration[5.0]
     create_table :working_places do |t|
       t.string :name
       t.string :address
+      t.string :zip_code
+      t.string :city
+      t.string :country
       t.string :contact_name
       t.string :phone
       t.string :mail

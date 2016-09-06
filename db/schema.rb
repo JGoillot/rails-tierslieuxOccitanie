@@ -35,6 +35,9 @@ ActiveRecord::Schema.define(version: 20160905121159) do
   create_table "working_places", force: :cascade do |t|
     t.string   "name"
     t.string   "address"
+    t.string   "zip_code"
+    t.string   "city"
+    t.string   "country"
     t.string   "contact_name"
     t.string   "phone"
     t.string   "mail"

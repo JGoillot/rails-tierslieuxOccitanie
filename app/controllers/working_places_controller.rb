@@ -32,7 +32,7 @@ class WorkingPlacesController < ApplicationController
   private
 
   def working_place_params
-    params.require(:working_place).permit(:name, :address, :contact_name, :phone, :mail, :website_url, :capacity, :oppening_time, :price)
+    params.require(:working_place).permit(:name, :address, :city, :country, :zip_code, :contact_name, :phone, :mail, :website_url, :capacity, :oppening_time, :price)
   end
 
 end
