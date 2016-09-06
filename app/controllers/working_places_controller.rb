@@ -2,7 +2,7 @@ class WorkingPlacesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show, :new, :create]
 
   def index
-    @working_places = WorkingPlace.where.not(latitude: nil, longitude: nil)
+    @working_places = WorkingPlace.where.not(latitude: nil, longitude: nil).where(statut: true)
 
     @hash = Gmaps4rails.build_markers(@working_places) do |working_place, marker|
       marker.lat working_place.latitude
@@ -23,7 +23,7 @@ class WorkingPlacesController < ApplicationController
     @working_place = WorkingPlace.new(working_place_params)
 
     if @working_place.save
-      redirect_to working_place_path(@working_place)
+      redirect_to new_path
     else
       render :new
     end

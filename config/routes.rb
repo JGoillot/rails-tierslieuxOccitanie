@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get 'dashboard' => 'pages#dashboard'
+  get 'new' => 'pages#after_fill'
 
   resources :working_places
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
