@@ -3,6 +3,7 @@
     <%= simple_form_for @working_place do |f| %>
       <%= f.error_notification %>
       <%= f.input :name %>
+      <%= f.input :photo, as: :attachinary %>
       <%= f.input :address %>
       <%= f.input :zip_code %>
       <%= f.input :city %>
