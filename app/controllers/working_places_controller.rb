@@ -29,6 +29,12 @@ class WorkingPlacesController < ApplicationController
     end
   end
 
+  def update
+    @working_place = WorkingPlace.find(params[:id])
+    @working_place.update(statut: params[:statut])
+    redirect_to working_places_path
+  end
+
   private
 
   def working_place_params

@@ -5,6 +5,14 @@
     <h1> I'm a Dashboard </h1>
 
     <% @working_places.each do |place| %>
+    <div class="on-off">
+      <div class="toggleWrapper">
+        <input type="checkbox" id="dn" class="dn"/>
+        <label for="dn" class="toggle"><span class="toggle__handler"></span></label>
+      </div>
+    </div>
+
+      <%= link_to("Validate ?", working_place_path(place, :statut => true), :method => :put, :confirm => "Are you sure?") %>
       <%= place.name %>
     <% end %>
 
