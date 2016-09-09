@@ -1,0 +1,36 @@
+.button-home {
+  background: rgba(0,0,0,0.5);
+  font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 3px;
+  border: 3px solid #ccc;
+  color: white;
+  text-decoration: none !important;
+  &:hover {
+  cursor: pointer;
+  border-color: #9055A2;
+  color: #9055A2;
+  }
+}
+
+
+.button-header {
+  font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
+  font-size: 12px;
+  line-height: 1.2;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 3px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none !important;
+  &:hover {
+  cursor: pointer;
+  border-color: #9055A2;
+  background-color: rgba(0,0,0,0.5);
+  color: #9055A2;
+  }
+}

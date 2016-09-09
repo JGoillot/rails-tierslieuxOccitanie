@@ -1,0 +1,17 @@
+.header-top {
+  line-height: 33px;
+  height: 33px;
+  padding-top: 2px;
+  margin-right: 22px;
+  display: flex;
+  justify-content: flex-end;
+  & .fa {
+    margin-right: 22px;
+    font-size: 14px;
+    color: white;
+    background: transparent;
+    &:hover {
+      color: #9055A2;
+    }
+  }
+}
