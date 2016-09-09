@@ -1,12 +1,40 @@
 <div class="container">
+  <div class="text-center">
+    <h2>On-demand workspace, when you need it.</h2>
+
+    Book a coworking space, business center, or shared office space nearby.
+    Discover spaces to rent by the hour, day, or month.
+
   <hr>
 
   <%= link_to "Ajoutez un tiers lieux", new_working_place_path , class: "btn btn-default" %> <br>
+    <div class="row">
+      <% @working_places.each do |place| %>
+      <div class="col-md-4">
+        <div class="card">
+        <%= link_to working_place_path(place) do %>
+            <div class="price">60<span class="glyphicon glyphicon-eur" aria-hidden="true"></span>  / day</div>
+            <div class="image" style="background-image: url('<%= cl_image_path place.photo.path, height: 300, width: 400, crop: :fill %>');"></div>
+            <div class="description">
+                <div class="row">
+                  <div class="col-sm-12"><h4><%= place.name %></h4></div>
+                </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <% end %>
+
+    </div>
+
+
+
   <% @working_places.each do |place| %>
   <%= link_to place.name, working_place_path(place), class: "card-link" %>
   <br>
   <% end %>
   <hr>
+  </div>
 </div>
 
 
