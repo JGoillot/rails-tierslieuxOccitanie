@@ -1,3 +1,5 @@
+<% content_for :title, "À-propos | Tiers lieux Occitanie " %>
+
 <%= render 'shared/navbar' %>
 
 <% array_picture = [
@@ -47,7 +49,7 @@
       <div id="owl-example" class="owl-carousel">
       <% @working_places.each do |place| %>
         <div>
-        <%= image_tag array_picture.sample, class: "img-owl" %>
+        <%= image_tag array_picture.sample, class: "img-owl" %><br>
         <%= place.name %>
         </div>
       <% end %>

@@ -15,4 +15,8 @@ class PagesController < ApplicationController
   def after_fill
   end
 
+  def network
+    @working_places = WorkingPlace.where(statut: true) # Network members
+  end
+
 end
