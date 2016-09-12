@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get 'dashboard' => 'pages#dashboard'
+  get 'about-us' => 'pages#who'
   get 'new' => 'pages#after_fill'
 
   resources :working_places
