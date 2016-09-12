@@ -1,0 +1,57 @@
+<%= render 'shared/navbar' %>
+
+<% array_picture = [
+  "https://static.pexels.com/photos/7374/startup-photos-large.jpg",
+  "https://static.pexels.com/photos/51171/pexels-photo-51171-large.jpeg",
+  "https://static.pexels.com/photos/7350/startup-photos-large.jpg",
+  "https://static.pexels.com/photos/154/people-apple-iphone-writing-large.jpg",
+  "https://static.pexels.com/photos/7361/startup-photos-large.jpg",
+  "https://static.pexels.com/photos/7355/startup-photos-large.jpg",
+  "https://static.pexels.com/photos/8169/pexels-photo-large.jpg",
+  "https://static.pexels.com/photos/6374/flowers-desk-office-vintage-large.jpg",
+  "https://static.pexels.com/photos/23978/pexels-photo-23978-large.jpg",
+  "https://static.pexels.com/photos/4428/office-table-home-room-large.jpeg"
+  ] %>
+
+<div class="container">
+  <div class="feature">
+    <div class="text-center">
+      <p class="title">Our Valued Services</p>
+      <h2 class="heading">What we Offer</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="first-col">
+            <i class="fa fa-lightbulb-o icone color1" aria-hidden="true"></i>
+            <h4 class="color-1">La Comission</h4>
+            <p>Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="second-col">
+            <i class="fa fa-sitemap icone color2" aria-hidden="true"></i>
+            <h4 class="color-1">La Mêlée</h4>
+            <p>Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="first-col">
+            <i class="fa fa-calendar-check-o icone color1" aria-hidden="true"></i>
+            <h4 class="color-1">Agenda Actu</h4>
+            <p>Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="owl-example" class="owl-carousel">
+      <% @working_places.each do |place| %>
+        <div>
+        <%= image_tag array_picture.sample, class: "img-owl" %>
+        <%= place.name %>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,3 +7,20 @@
 //= require jquery-fileupload/basic
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
+
+
+$(document).ready(function() {
+
+$("#owl-example").owlCarousel({
+
+  //Basic Speeds
+    slideSpeed : 200,
+    paginationSpeed : 800,
+    rewindSpeed : 1000,
+
+  //Autoplay
+    autoPlay : true,
+    stopOnHover : true,
+})
+
+});

@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def who
+    @working_places = WorkingPlace.where(statut: true) # Network members
   end
 
   def dashboard
