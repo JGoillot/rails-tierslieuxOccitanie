@@ -1,0 +1,95 @@
+<% content_for :title, "À-propos | Tiers lieux Occitanie " %>
+
+<div class="navigation">
+  <div class="container">
+    <div class="menu">
+      <%= link_to "QUI ?", about_us_path, class: "nav-title hvr-bounce-in" %>
+      <%= link_to "LE RÉSEAU", le_reseau_path, class: "nav-title hvr-bounce-in active underline" %>
+      <%= link_to "LES TIERS LIEUX", working_places_path, class: "nav-title hvr-bounce-in" %>
+      <%= link_to "TISSÉO", tisseo_path, class: "nav-title hvr-bounce-in" %>
+      <%= link_to "PRIX", about_us_path, class: "nav-title hvr-bounce-in" %>
+    </div>
+    <div class="social-links">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+
+<% array_picture = [
+  "https://static.pexels.com/photos/7374/startup-photos-large.jpg",
+  "https://static.pexels.com/photos/51171/pexels-photo-51171-large.jpeg",
+  "https://static.pexels.com/photos/7350/startup-photos-large.jpg",
+  "https://static.pexels.com/photos/154/people-apple-iphone-writing-large.jpg",
+  "https://static.pexels.com/photos/7361/startup-photos-large.jpg",
+  "https://static.pexels.com/photos/7355/startup-photos-large.jpg",
+  "https://static.pexels.com/photos/8169/pexels-photo-large.jpg",
+  "https://static.pexels.com/photos/6374/flowers-desk-office-vintage-large.jpg",
+  "https://static.pexels.com/photos/23978/pexels-photo-23978-large.jpg",
+  "https://static.pexels.com/photos/4428/office-table-home-room-large.jpeg"
+  ] %>
+
+<div class="network">
+  <div class="container">
+    <div class="feature">
+      <div class="text-center">
+        <p class="title">Our Service Keeps You Happy</p>
+        <h2 class="heading">What We Do</h2>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+            <div class="do-wrap text-center">
+              <div class="dark_gray top"></div>
+              <span class="dark_gray"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+              <h4>Le Projet</h4>
+              <p>Keep away from people who try to belittle your ambitions. Small people always do that.</p>
+              <a href="#" class="readmore">READ MORE</a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+            <div class="do-wrap text-center">
+              <div class="green top"></div>
+              <span class="green"><i class="fa fa-book" aria-hidden="true"></i></span>
+              <h4>La Charte</h4>
+              <p>Keep away from people who try to belittle your ambitions. Small people always do that.</p>
+              <a href="#." class="readmore">READ MORE</a> </div>
+          </div>
+          <div class="col-md-3 col-sm-6 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+            <div class="do-wrap text-center">
+              <div class="dark_gray top"></div>
+              <span class="dark_gray"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+              <h4>Devenir Membre</h4>
+              <p>Keep away from people who try to belittle your ambitions. Small people always do that.</p>
+              <a href="#" class="readmore">READ MORE</a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+            <div class="do-wrap text-center">
+              <div class="green top"></div>
+              <span class="green"><i class="fa fa-users" aria-hidden="true"></i></span>
+              <h4>Les membres</h4>
+              <p>Keep away from people who try to belittle your ambitions. Small people always do that.</p>
+              <a href="#." class="readmore">READ MORE</a> </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="text-center">
+    <hr>
+    <div class="tl-list">
+      <div id="owl-example" class="owl-carousel">
+      <% @working_places.each do |place| %>
+        <div>
+        <%= image_tag array_picture.sample, class: "img-owl" %><br>
+        <%= place.name %>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
