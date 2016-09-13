@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :after_fill, :who ]
+  skip_before_action :authenticate_user!, only: [ :home, :after_fill, :who, :network, :tisseo ]
 
   def home
   end
@@ -13,6 +13,9 @@ class PagesController < ApplicationController
   end
 
   def after_fill
+  end
+
+  def tisseo
   end
 
   def network

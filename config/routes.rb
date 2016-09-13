@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'dashboard' => 'pages#dashboard'
   get 'about-us' => 'pages#who'
   get 'le-reseau' => 'pages#network'
+  get 'tisseo' => 'pages#tisseo'
   get 'new' => 'pages#after_fill'
 
   resources :working_places
