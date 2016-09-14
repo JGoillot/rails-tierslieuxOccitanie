@@ -124,6 +124,7 @@ ul.tabs{
     width: 100%;
     padding-left: 60px;
     padding-top: 0px;
+    list-style-type: none;
 }
 
 ul.tabs li {
@@ -144,11 +145,11 @@ ul.tabs li {
 }
 
 .services-section .services-content ul.tabs li.active{
-    color: #1175b4;
+    color: #9b59b6;
 }
 
 .services-section .services-content ul.tabs li:hover{
-    color: #1175b4;
+    color: #9b59b6;
     cursor: pointer;
 }
 
