@@ -1,0 +1,225 @@
+/*
+ #
+ # 6.5 OUR SERVICES
+ # -----------------------------------------------------------------------------
+ #
+ */
+
+.services-section{
+    width: 100%;
+    height: 520px;
+    background: url('../images/hire-me-bg.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding-top: 70px;
+}
+
+.services-section .overlay-parallax{
+    background: #1f1f1f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .95;
+}
+
+.services-section .head-parallax h2{
+    color: #fff;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+
+.services-section .line-2{
+    width: 30px;
+    height: 10px;
+    background: #fff;
+    margin-left: 3px;
+    position: relative;
+}
+
+.services-content{
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    width: 50%;
+}
+
+.services-section .services-images {
+    position: absolute;
+    left: 0;
+    top: 0%;
+    z-index: 9;
+    width: 50%;
+    overflow: hidden;
+    height: 520px !important;
+}
+
+.services-section .service-image {
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    display: none;
+    background-size: cover !important;
+}
+
+.services-section .services-content .descriptions {
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+    line-height: 24px;
+    height: 350px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    width: 470px;
+    float: left;
+}
+
+.services-section .services-content .descriptions h3 {
+    color: #7DBA2F;
+    font-weight: 800;
+    font-size: 13px;
+    margin-left: 2px;
+    border-bottom: 3px solid #7DBA2F;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.services-section .services-content .descriptions .service-description {
+    height: auto;
+    display: none;
+    position: absolute;
+    top: 0%;
+}
+
+.services-section .services-content p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 28px;
+    font-family: 'FiraSans-LightItalic';
+}
+
+.services-section .services-content p.without-margin-bottom {
+    margin-bottom: 0;
+}
+
+.services-section .services-content p a {
+    color: #2C3459;
+    text-decoration: underline;
+}
+
+.services-section .services-content p a:hover {
+    text-decoration: none;
+}
+
+ul.tabs{
+    display: block;
+    float: left;
+    width: 100%;
+    padding-left: 60px;
+    padding-top: 0px;
+}
+
+ul.tabs li {
+    float: left;
+    color: #fff;
+    text-align: center;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-family: 'Signika-Bold';
+    transition: all .25s linear;
+}
+
+.services-section .services-content ul.tabs i{
+    font-size: 32px;
+    display: block;
+    margin-bottom: 8px;
+    transition: all .30s linear .10s;
+}
+
+.services-section .services-content ul.tabs li.active{
+    color: #1175b4;
+}
+
+.services-section .services-content ul.tabs li:hover{
+    color: #1175b4;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+
+    .services-section{
+        height: auto;
+        padding-top: 0;
+    }
+
+    .services-section .services-images{
+        position: relative;
+        width: 100%;
+        height: 300px !important;
+        overflow: auto;
+    }
+
+    .services-content{
+        position: relative;
+        width: 100%;
+        top: 0;
+    }
+
+    .services-section .services-content .descriptions{
+        margin: 0;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .services-section .services-content .descriptions .service-description{
+       top: 0;
+        position: absolute;
+        left: 0;
+        height: auto;
+        width: 100%;
+    }
+
+    .services-section .head-parallax h2{
+        margin: 10px 0 0;
+        font-size: 32px;
+    }
+
+    .services-section .services-content p{
+        font-size: 12px;
+    }
+
+    ul.tabs{
+        margin: 40px 0 50px;
+        height: 40px;
+        padding: 0;
+        text-align: center;
+    }
+
+    ul.tabs li{
+        margin: 0 8px;
+        float: none;
+        display: inline-block !important;
+    }
+
+    .services-section .services-content ul.tabs i{
+        font-size: 32px;
+    }
+
+    .services-section .services-content ul.tabs span{
+        font-size: 12px;
+    }
+
+    .services-section .services-content p{
+        padding: 0px;
+        line-height: 24px;
+        margin-bottom: 15px;
+        padding-top: 15px;
+    }
+}

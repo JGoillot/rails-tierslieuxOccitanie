@@ -1,0 +1,129 @@
+/* ---------- Pricing Tables ---------- */
+.pricing {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pricing_item {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  text-align: center;
+  -webkit-flex: 0 1 330px;
+  flex: 0 1 330px;
+}
+.pricing_list {
+  text-align: left;
+  list-style-type: none;
+}
+.pricing_tenzin .pricing_item {
+  margin: 1em;
+  padding: 2em 1em;
+  text-align: left;
+  color: #262b38;
+  background: #EEF0F3;
+  border-top: 3px solid;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+  margin-top:0;
+}
+.pricing_tenzin .pricing_item.pink{
+  border-color:#EC768C;
+}
+.pricing_tenzin .pricing_item.blue{
+  border-color:#07AAA5;
+}
+.pricing_tenzin .pricing_item.pink .pricing_action{
+  background:#EC768C;
+}
+.pricing_tenzin .pricing_item.blue .pricing_action{
+  background:#07AAA5;
+}
+.pricing_tenzin .pricing_item.active{
+  border-color: #82B440;
+}
+/*.pricing_tenzin .pricing_item.active:hover{
+  border-color: #07AAA5;
+} */
+.pricing_tenzin .pricing_title {
+  font-size: 1em;
+  margin: 0 0 1em;
+}
+.pricing_item:hover .pricing_action{
+  border:1px solid transparent;
+  background:#82b440 !important;
+  text-decoration: none;
+}
+.pricing_tenzin .pricing_price {
+  font-size: 2em;
+  padding: 0.5em 0 0.75em;
+  border-top: 3px solid rgba(139, 144, 157, 0.18);
+}
+
+.pricing_tenzin .pricing_currency {
+  font-size: 0.5em;
+  vertical-align: super;
+}
+
+.pricing_tenzin .pricing_sentence {
+  // font-weight: bold;
+  padding: 0 0 0.5em;
+  color: #9CA0A9;
+  border-bottom: 3px solid rgba(139, 144, 157, 0.18);
+}
+
+.pricing_tenzin .pricing_list {
+  font-size:14px;
+  padding:25px 0;
+  color: #8b909d;
+}
+.pricing_tenzin .pricing_list li{
+  margin-bottom:8px;
+}
+.pricing_tenzin .pricing_list li:before{
+  content:'\f00c';
+  font-family:'FontAwesome';
+  display: inline-block;
+   margin-right:10px;
+   vertical-align: middle;
+  color:#82B440;
+}
+
+.pricing_tenzin .pricing_action {
+  font-weight: bold;
+  margin-top: auto;
+  padding: 1em 2em;
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  border:1px solid transparent;
+
+ }
+.pricing_item.active .pricing_action{
+  border:1px solid transparent;
+  background:#82b440;
+}
+.pricing_item.active:hover .pricing_action{
+  border:1px solid transparent;
+  background:#07AAA5 !important;
+}
+
+.pricing_item.dark_gray:hover .pricing_action {
+    border: 1px solid transparent;
+    background: #07AAA5 !important;
+}
+
+.pricing_item.dark_gray .pricing_action {
+    background: #969696;
+}
+/* ---------- Pricing Tables ---------- */

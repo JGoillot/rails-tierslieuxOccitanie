@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'le-reseau' => 'pages#network'
   get 'tisseo' => 'pages#tisseo'
   get 'new' => 'pages#after_fill'
+  get 'prix' => 'pages#price'
 
   resources :working_places
   mount Attachinary::Engine => "/attachinary"
