@@ -2,6 +2,7 @@
 
 <div class="container">
   <div class="text-center">
+  <div class="title"></div>
     <h2>On-demand workspace, when you need it.</h2>
 
     Book a coworking space, business center, or shared office space nearby.
@@ -28,13 +29,6 @@
       <% end %>
 
     </div>
-
-
-
-  <% @working_places.each do |place| %>
-  <%= link_to place.name, working_place_path(place), class: "card-link" %>
-  <br>
-  <% end %>
   <hr>
   </div>
 </div>

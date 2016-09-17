@@ -1,0 +1,32 @@
+.head_show {
+  margin-top: 22px;
+  display: flex;
+  justify-content: flex-start;
+  & .all_link {
+    margin-right: 12px;
+    & .return {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  & .fa {
+    color: #82b440;
+    margin-right: 12px;
+  }
+  & .city {
+    border-bottom: .125rem solid #82b440;
+  }
+}
+
+#owl-show .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slider {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

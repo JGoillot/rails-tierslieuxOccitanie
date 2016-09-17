@@ -1,6 +1,28 @@
 <%= render 'shared/navbar' %>
 
 <div class="container">
+  <div class="title"></div>
+
+  <div class="head_show">
+    <div class="all_link"> <%= link_to "All offices", working_places_path, class: "return" %> </div>
+    <div> <i class="fa fa-chevron-right" aria-hidden="true"></i> </div>
+    <div class="city"> <%= @working_place.city %> </div>
+  </div>
+</div>
+  <div class="slider" style="background: url(http://owlgraphic.com/owlcarousel/demos/assets/fullimage1.jpg)">
+  </div>
+  <!-- <div id="owl-show" class="owl-carousel owl-theme">
+
+    <div class="item"><img src="http://owlgraphic.com/owlcarousel/demos/assets/fullimage1.jpg" alt="The Last of us"></div>
+    <div class="item"><img src="http://owlgraphic.com/owlcarousel/demos/assets/fullimage2.jpg" alt="GTA V"></div>
+    <div class="item"><img src="http://owlgraphic.com/owlcarousel/demos/assets/fullimage3.jpg" alt="Mirror Edge"></div>
+
+  </div> -->
+
+
+<hr>
+
+<div class="container">
   <div class="row-md-6 row-md-offset-2">
 
     <% if @working_place.photo? %>

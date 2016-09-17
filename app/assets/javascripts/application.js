@@ -314,3 +314,25 @@ $( document ).ready( function() {
 
 
 });
+
+
+
+
+// SHOW
+
+$(document).ready(function() {
+
+  $("#owl-show").owlCarousel({
+
+
+      // "singleItem:true" is a shortcut for:
+      // items : 1,
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+
+  });
+
+});
+
