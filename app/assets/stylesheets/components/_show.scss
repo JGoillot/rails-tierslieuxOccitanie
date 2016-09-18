@@ -2,6 +2,8 @@
   margin-top: 22px;
   display: flex;
   justify-content: flex-start;
+  padding-top: .9375rem;
+  padding-bottom: .9375rem;
   & .all_link {
     margin-right: 12px;
     & .return {
@@ -18,15 +20,39 @@
   }
 }
 
-#owl-show .item img{
-    display: block;
-    width: 100%;
-    height: auto;
+.card_work {
+  position: absolute;
+  top: 220px;
+  padding: 2.5rem;
+  max-width: 450px;
+  background-color: #FFFFFF;
+  border-color: #777;
+  .brand_name {
+    font-size: 1.5625rem;
+    line-height: 0.5;
+    letter-spacing: 2px;
+    font-family: Knockout\ 48 A,Knockout\ 48 B,Impact,Apercu,Calibri,Roboto,Helvetica,sans-serif;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: -1px;
+  }
+  .work_title {
+    margin-top: 2px;
+  }
+  .adress {
+    display: flex;
+    justify-content: flex-start;
+    div {
+      margin-right: 8px;
+    }
+  }
+  hr {
+    height: 3px;
+    background: #82b440;
+    margin: .75rem auto;
+  }
 }
 
-.slider {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}

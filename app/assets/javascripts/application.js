@@ -320,19 +320,18 @@ $( document ).ready( function() {
 
 // SHOW
 
-$(document).ready(function() {
-
-  $("#owl-show").owlCarousel({
-
-
-      // "singleItem:true" is a shortcut for:
-      // items : 1,
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
-
-  });
-
+var fixmeTop = $('.fixme').offset().top;
+$(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+        $('.fixme').css({
+            position: 'fixed',
+            top: '220',
+        });
+    } else {
+        $('.fixme').css({
+            position: 'fixed',
+            top: '220',
+        });
+    }
 });
-

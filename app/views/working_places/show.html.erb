@@ -9,7 +9,27 @@
     <div class="city"> <%= @working_place.city %> </div>
   </div>
 </div>
-  <div class="slider" style="background: url(http://owlgraphic.com/owlcarousel/demos/assets/fullimage1.jpg)">
+  <div class="slider">
+    <%= cl_image_tag @working_place.photo.path, width: 1280, height: 410, crop: :fill %>
+    <div class="container">
+      <div class="card_work fixme">
+        <div class="brand_name">
+          <h3>Tiers Lieux Occitanie</h3>
+        </div>
+        <div class="work_title h1">
+            <%= @working_place.name %>
+        </div>
+        <div class="adress">
+          <div> <%= @working_place.address %> </div>
+          <div> <%= @working_place.zip_code %> </div>
+          <div> <%= @working_place.city %> </div>
+        </div>
+        <hr>
+        <div class="baseline">
+          Tiers Lieux Occitanie is best experienced in person. Fill out your information to schedule a visit.
+        </div>
+      </div>
+    </div>
   </div>
   <!-- <div id="owl-show" class="owl-carousel owl-theme">
 
