@@ -85,14 +85,25 @@
     }
   }
   .habilities {
-    margin-top: 30px;
+    margin-top: 25px;
     display: flex;
+    padding-bottom: 25px;
+    border-bottom: .125rem solid rgba(119,119,119,0.4);
     .item-work {
       width: 25%;
       font-weight: bold;
     }
     .text-work {
       width: 75%;
+    }
+    &:last-child {
+     background-color: red;
+    }
+  }
+  .gallery{
+    padding-bottom: 45px;
+    .gallery-work {
+      width: 100%;
     }
   }
 }
