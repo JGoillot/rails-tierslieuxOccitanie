@@ -29,30 +29,71 @@
           Tiers Lieux Occitanie is best experienced in person. Fill out your information to schedule a visit.
         </div>
       </div>
-
-
-
     </div>
   </div>
-  <!-- <div id="owl-show" class="owl-carousel owl-theme">
-
-    <div class="item"><img src="http://owlgraphic.com/owlcarousel/demos/assets/fullimage1.jpg" alt="The Last of us"></div>
-    <div class="item"><img src="http://owlgraphic.com/owlcarousel/demos/assets/fullimage2.jpg" alt="GTA V"></div>
-    <div class="item"><img src="http://owlgraphic.com/owlcarousel/demos/assets/fullimage3.jpg" alt="Mirror Edge"></div>
-
-  </div> -->
 
 
-<hr>
+
 
 <div class="container">
-  <div class="row-md-6 row-md-offset-2">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-5">
+      <div class="work-content">
+        <div class="introduction">
+          With a perfect location in the Financial District, this San Francisco office space maintains a relaxed vibe and a productive atmosphere. Enjoy stunning views of the city through the huge windows, or make use of our outdoor patio space for networking events. The five floors dedicated to WeWork consist of numerous generously proportioned offices that are perfect for businesses ranging from startups to established companies. It sits on the border of Chinatown, and the incredible range of Asian cuisine means no more boring lunches at your desk. One of the city’s iconic trolleys runs right in front of the building along California Street. For a great location, access to transportation, and a tight-knit community, this coworking space is hard to beat.
+        </div>
 
-    <% if @working_place.photo? %>
-      <%= cl_image_tag @working_place.photo.path, width: 800, height: 400, crop: :fill %>
-    <% end %>
+        <h3 class="section-title h3Underlined"> HERE TO HELP </h3>
+        <div class="about-office">
+          <div class="row">
+            <div class="col-md-4">
+            <%= image_tag("https://res.cloudinary.com/wework/image/upload/c_fill,h_500,w_500/v1441905535/production/profile/avatar/ada13660-0d36-0133-912a-0e634e85779a.jpg?auto=compress%2Cformat&w=1200", class: "picture") %>
+            </div>
+            <div class="col-md-8">
+              <div class="manager">
+                <h4 class="name"> <%= @working_place.contact_name %> Jérémy Goillot </h4>
+                <h6 class="city"> <%= @working_place.city %> </h6>
+                <p> The community management team adds a personal, professional touch to each WeWork building and is committed to empowering members in every possible way. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <%= @working_place.name %> <br>
+<div class="options-works">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-5">
+        <div class="work-content">
+          <h3 class="section-title h3Underlined"> BUILDING AMENITIES </h3>
+          <div class="habilities">
+            <div class="item-work">
+              Weekly Events
+            </div>
+            <div class="text-work">
+              Networking, happy hours, classes & workshops - we have events all the time and space for you to host your own.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+ <!--    <%= @working_place.name %> <br>
     <%= @working_place.address %> <br>
     <%= @working_place.contact_name %> <br>
     <%= @working_place.phone %> <br>
@@ -60,8 +101,8 @@
     <%= @working_place.website_url %> <br>
     <%= @working_place.capacity %> <br>
     <%= @working_place.oppening_time %> <br>
-    <%= @working_place.price %>
-  </div>
+    <%= @working_place.price %>  -->
+
 
   <%= link_to "Voir l'ensemble des tiers lieux", working_places_path , class: "btn btn-default" %>
-</div>
+

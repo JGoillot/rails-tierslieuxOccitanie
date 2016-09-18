@@ -57,3 +57,48 @@
   }
 }
 
+.work-content {
+  .introduction {
+    padding-top: 45px;
+  }
+  .section-title {
+    margin-top: 22px;
+  }
+  .h3Underlined {
+    border-bottom: .125rem solid black;
+    margin-bottom: .75rem;
+    padding-bottom: .75rem;
+  }
+  .about-office {
+    margin-top: 28px;
+    .picture {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+    }
+    .manager {
+      .name {
+        line-height: 1.12;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .habilities {
+    margin-top: 30px;
+    display: flex;
+    .item-work {
+      width: 25%;
+      font-weight: bold;
+    }
+    .text-work {
+      width: 75%;
+    }
+  }
+}
+
+.options-works {
+  margin-top: 60px;
+  padding-top: 30px;
+  background-color: #ececec;
+  }
