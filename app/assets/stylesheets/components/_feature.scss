@@ -82,7 +82,7 @@ p {
     }
   &:hover {
     color: #96C05F;
-    & .fa {
+    & .fa-calendar-check-o {
       -webkit-transform: scale(1.4);
       transform: scale(1.4);
     }
@@ -99,5 +99,8 @@ p {
   }
   .agenda-date {
     font-weight: bold;
+  }
+  .agenda-title {
+    font-size: 17px;
   }
 }
