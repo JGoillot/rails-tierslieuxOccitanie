@@ -18,8 +18,8 @@
 }
 
 h4 {
-  font-family: "raleway";
-  font-size: 19px;
+  margin-top: 20px;
+  font-size: 22px;
 
 }
 
@@ -29,21 +29,75 @@ p {
 }
 
 .first-col {
+  .co-animateur {
+      margin-left: 28px;
+    }
   &:hover {
     color: #96C05F;
     & .fa {
       -webkit-transform: scale(1.4);
       transform: scale(1.4);
     }
+    .bigger-text {
+      font-weight: bold;
+    }
+  }
+  p {
+    font-size: 15px;
+    color: #7c8592;
+    font-weight: normal;
+    line-height: 25px;
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
 
 .second-col {
   &:hover {
     color: #07AAA5;
+    & .fa-sitemap {
+      -webkit-transform: scale(1.4);
+      transform: scale(1.4);
+    }
+    .bigger-text {
+      font-weight: bold;
+    }
+  }
+  p {
+    font-size: 15px;
+    color: #7c8592;
+    font-weight: normal;
+    line-height: 25px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .mission-bullet {
+    margin-left: 18px;
+  }
+}
+
+.third-col {
+  .co-animateur {
+      margin-left: 28px;
+    }
+  &:hover {
+    color: #96C05F;
     & .fa {
       -webkit-transform: scale(1.4);
       transform: scale(1.4);
     }
+    .bigger-text {
+      font-weight: bold;
+    }
+  }
+  p {
+    font-size: 15px;
+    color: #7c8592;
+    font-weight: normal;
+    line-height: 25px;
+    text-align: center;
+  }
+  .agenda-date {
+    font-weight: bold;
   }
 }

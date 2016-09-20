@@ -33,42 +33,75 @@
 <div class="container">
   <div class="feature">
     <div class="text-center">
-      <p class="title">Our Valued Services</p>
-      <h2 class="heading">What we Offer</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="first-col">
+      <p class="title">Télétravail - Coworking - Tiers-Lieux</p>
+      <h2 class="heading">DIGITAL  WORK</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="first-col">
+          <div class="text-center">
             <i class="fa fa-lightbulb-o icone color1" aria-hidden="true"></i>
             <h4 class="color-1">La Commission</h4>
-            <p>Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
           </div>
+          <p>Un espace d’échanges et d’informations pour tous les professionnels intéressés par les nouvelles organisations de travail et les Tiers Lieux.
+          </p><p>Créée en 2012, la <span class="bigger-text">Commission Télétravail & Espaces Collaboratifs</span> compte une centaine de membres et s’intéresse au télétravail, au coworking, au nomadisme, au travail collaboratif, à l’entreprise libérée …
+          </p><p>La Commission Télétravail & Espaces Collaboratifs est l’une des 15 Commissions créées au sein de <span class="bigger-text">l’Association régionale La Mêlée </span>.
+          </p><p>Elle est animée par 3 co-animateurs :<br>
+           <span class="bigger-text co-animateur">Annie Fachetti</span> – Ariège Expansion<br>
+           <span class="bigger-text co-animateur">Stéphane Capgras</span> – CC Tarn & Dadou<br>
+           <span class="bigger-text co-animateur">Philippe Bresolin</span> – Co Consult Group</p>
         </div>
-        <div class="col-md-4">
-          <div class="second-col">
+      </div>
+      <div class="col-md-4">
+        <div class="second-col">
+          <div class="text-center">
             <i class="fa fa-sitemap icone color2" aria-hidden="true"></i>
             <h4 class="color-1">La Mêlée</h4>
-            <p>Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
           </div>
+          <p>Catalyseur d’énergies et agitateurs d’idées, <span class="bigger-text">La Mêlée</span> est un Think Tank et un Do Tank de l’économie numérique qui rassemble les hommes, les initiatives et les idées autour d’horizons communs à l’occasion de nombreuses manifestations.
+          </p><p>De nombreuses missions : <br>
+           <span class="mission-bullet"></span> <i class="fa fa-caret-right" aria-hidden="true"></i> Eduquer et <span class="bigger-text">sensibiliser au numérique</span> <br>
+           <span class="mission-bullet"></span> <i class="fa fa-caret-right" aria-hidden="true"></i> Accompagner les organisations dans leur <span class="bigger-text">transformation digitale</span> et dans leurs démarches d’innovation collective <br>
+           <span class="mission-bullet"></span> <i class="fa fa-caret-right" aria-hidden="true"></i> Soutenir l’<span class="bigger-text">innovation</span> et l’<span class="bigger-text">entrepreneuriat</span> <br>
+           <span class="mission-bullet"></span> <i class="fa fa-caret-right" aria-hidden="true"></i> Participer au rayonnement numérique de la métropole (French Tech) <br>
+           <span class="mission-bullet"></span> <i class="fa fa-caret-right" aria-hidden="true"></i> Accueillir le public, gérer et animer <span class="bigger-text">La Cantine Toulouse</span> <br>
+          </p>
         </div>
-        <div class="col-md-4">
-          <div class="first-col">
+      </div>
+      <div class="col-md-4">
+        <div class="third-col">
+          <div class="text-center">
             <i class="fa fa-calendar-check-o icone color1" aria-hidden="true"></i>
             <h4 class="color-1">Agenda Actu</h4>
-            <p>Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
+
+            <p><span class="agenda-date">27 Septembre 2016</span><br>
+                <span class="agenda-title">Table Ronde « Tiers Lieux : Savoir, comprendre, agir »</span><br>
+                <span class="agenda-place">La Cantine Quai des Savoirs</span><br>
+                <span class="agenda-time">De 10 h 30 à 11 h 30</span> </p>
+
+            <p>10 Octobre 2016
+                Réunion de La Commission au Périscope
+                (Ramonville-Saint-Agne)
+                De 12 h à 14 h </p>
+
+            <p>28 Novembre 2016
+                Réunion de La Commission à La Cantine
+                Quai des Savoirs
+                De 18 h 15 à 20 h 15 </p>
           </div>
         </div>
       </div>
+    </div>
 
-      <hr>
+    <hr>
 
-      <div id="owl-example" class="owl-carousel">
-      <% @working_places.each do |place| %>
-        <div>
-        <%= image_tag array_picture.sample, class: "img-owl" %><br>
-        <%= place.name %>
-        </div>
-      <% end %>
+    <div id="owl-example" class="owl-carousel">
+    <% @working_places.each do |place| %>
+      <div>
+      <%= image_tag array_picture.sample, class: "img-owl" %><br>
+      <%= place.name %>
       </div>
+    <% end %>
     </div>
   </div>
 </div>

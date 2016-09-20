@@ -24,9 +24,10 @@
       margin-top: -7px;
     }
     & p {
-      font-size: 14px;
+      font-size: 13px;
       color: #222222;
       margin: 0 15px;
+      margin-bottom: 11px;
     }
     & a {
       position: relative;
@@ -40,6 +41,7 @@
       text-transform: uppercase;
       text-decoration: none;
       margin: 35px 0;
+      margin-top: 10px;
       &:hover {
         color: #07aaa5;
       }
