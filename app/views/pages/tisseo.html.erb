@@ -7,7 +7,6 @@
       <%= link_to "LE RÉSEAU", le_reseau_path, class: "nav-title hvr-bounce-in" %>
       <%= link_to "LES TIERS LIEUX", working_places_path, class: "nav-title hvr-bounce-in" %>
       <%= link_to "TISSÉO", tisseo_path, class: "nav-title hvr-bounce-in active underline" %>
-      <%= link_to "PRIX", prix_path, class: "nav-title hvr-bounce-in" %>
     </div>
     <div class="social-links">
       <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -20,98 +19,92 @@
 <div class="container">
   <div class="feature">
     <div class="text-center">
-      <p class="title">Our Tisseo Challenge</p>
-      <h2 class="heading">Who want to win</h2>
+      <p class="title">TROPHEES ECOMOBILITE SMTC TISSEO 2016</p>
+      <h2 class="heading">Encourager – Valoriser - Récompenser</h2>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3"><%= image_tag "header-awards", class: "awards-logo" %></div>
+      <div class="col-md-6 col-md-offset-3 text-awards">
+        <p> Depuis plusieurs années, le <%= link_to "SMTC-Tisséo", "http://www.smtc-tisseo.fr/", :target => "_blank" %> accompagne et conseille les entreprises et administrations qui souhaitent mettre en place une démarche éco responsable à travers un plan de mobilité. </p>
+        <p> Le <%= link_to "SMTC-Tisséo", "http://www.smtc-tisseo.fr/", :target => "_blank" %> valorise ces actions en distinguant les entreprises exemplaires en matière d’écomobilité par les Trophées Ecomobilité. </p>
+        <p> La Mêlée et la Commission Télétravail & Espaces Collaboratifs sont partenaires de l’édition 2016 des <b>Trophées Ecomobilité</b> via la contribution aux dotations des lauréats </p>
+      </div>
+    </div>
 
-      <section id="services" class="services-section parallax">
-        <div class="row">
-            <div class="overlay-parallax"></div>
+      <div class="row">
 
-              <div class="services-container">
-
-                        <!-- SERVICES THUMBNAILS -->
-                <div class="services-images" style="height: 454px;">
-                  <div class="service-image" style="display: block; background: url(https://static.pexels.com/photos/7096/people-woman-coffee-meeting-large.jpg) center center no-repeat;" data-service-key="web"></div>
-                  <div class="service-image" style="display: none; background: url(https://static.pexels.com/photos/7097/people-coffee-tea-meeting-large.jpg) center center no-repeat;" data-service-key="graphic"></div>
-                  <div class="service-image" style="display: none; background: url(https://static.pexels.com/photos/106344/pexels-photo-106344-large.jpeg) center center no-repeat;" data-service-key="brand"></div>
-                  <div class="service-image" style="display: none; background: url(https://static.pexels.com/photos/106344/pexels-photo-106344-large.jpeg) center center no-repeat;" data-service-key="work"></div>
-                </div>
-
-
-                <div class="clearfix"></div>
-                  <div class="services-content col-md-5 ">
-
-
-                    <!-- HEAD SECTION -->
-                    <div class="head-parallax">
-                      <h2 class="title-section">CHALLENGE TISSÉO</h2>
-                    </div>
-
-                    <!-- SERVICES DESCRIPTIONS -->
-                    <div class="descriptions" style="height: 254px;">
-
-                      <!-- FIRST SERVIC -->
-                      <div class="service-description fadeIn animated speed" data-service-key="web" style="display: block;">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
-                      </div>
-
-                      <!-- SECOND SERVICE -->
-                      <div class="service-description fadeIn" data-service-key="graphic" style="display: none;">
-                          <p>Lorem 2 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
-                      </div>
-
-                      <!-- THIRD SERVICE -->
-                      <div class="service-description fadeIn" data-service-key="brand" style="display: none;">
-                          <p>Lorem 3 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
-                      </div>
-
-                      <!-- FOURTH SERVICE -->
-                      <div class="service-description fadeIn" data-service-key="work" style="display: none;">
-                          <p>Lorem 4 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
-                      </div>
-
-                    </div>
-
-                    <!-- SERVICES TABS -->
-                    <ul class="wow fadeIn tabs" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.5s; animation-name: fadeIn;">
-                        <li class="active" data-service-key="web">
-                            <i class="fa fa-tv"></i>
-                            <span>Web design</span>
-                        </li>
-
-
-
-
-                        <li data-service-key="graphic" class="">
-                            <i class="fa fa-leaf"></i>
-                            <span>Graphic Design</span>
-                        </li>
-
-
-
-
-                        <li data-service-key="brand" class="">
-                            <i class="fa fa-tv"></i>
-                            <span>Brand &amp; Identity</span>
-                        </li>
-
-
-
-
-                        <li data-service-key="work" class="">
-                            <i class="fa fa-tv"></i>
-                            <span>Brand &amp; Identity</span>
-                        </li>
-
-                    </ul>
-
-
-                  </div>
-                <div class="clear"></div>
-              </div>
+        <div class="col-md-12">
+          <div class="pricing pricing_tenzin">
+            <div class="pricing_item dark_gray">
+                <h3 class="pricing_title">Trophées Or</h3>
+                <div class="pricing_price"><span class="pricing_currency"></span>Héliopole Balma</div>
+                <p class="pricing_sentence">Pass Télétravail Mobilité <br>
+                Réseau Tiers Lieux d’Occitanie
+                </p>
+                <ul class="pricing_list">
+                    <li class="pricing_feature">30 Pass à utiliser dans les Tiers Lieux partenaires</li>
+                    <li class="pricing_feature">Soit 1 journée, soit 2 demi journées</li>
+                </ul>
+                <p class="pricing_sentence">Pass Atelier Expert <br>
+                Commission Télétravail & Espaces Collaboratifs
+                </p>
+                <ul class="pricing_list">
+                    <li class="pricing_feature">1 Atelier Expert de 2 h. sur <b>la Responsabilité sociétale et numérique</b> – Par FACE Grand Toulouse</li>
+                </ul>
+                <a class="pricing_action text-center" href="#.">Choose plan</a>
             </div>
-        </section>
-
+            <div class="pricing_item active">
+                <h3 class="pricing_title">Trophées Or</h3>
+                <div class="pricing_price"><span class="pricing_currency"></span>SAFRAN</div>
+                <p class="pricing_sentence">Pass Télétravail Mobilité <br>
+                Réseau Tiers Lieux d’Occitanie</p>
+                <ul class="pricing_list">
+                    <li class="pricing_feature">30 Pass à utiliser dans les Tiers Lieux partenaires</li>
+                    <li class="pricing_feature">Soit 1 journée, soit 2 demi journées / Pass</li>
+                </ul>
+                <p class="pricing_sentence">Pass Atelier Expert <br>
+                Commission Télétravail & Espaces Collaboratifs</p>
+                <ul class="pricing_list">
+                    <li class="pricing_feature">1 Atelier Expert de 2 h. sur <b>le Management à distance</b> – Par Comètes, Espace d’Innovation à Lézat-sur-Lèze (09</li>
+                </ul>
+                <a class="pricing_action text-center" href="#.">Choose plan</a>
+            </div>
+          </div>
+          <div class="pricing pricing_tenzin">
+            <div class="pricing_item dark_gray">
+                <h3 class="pricing_title">Trophées Or</h3>
+                <div class="pricing_price"><span class="pricing_currency"></span>Héliopole Balma</div>
+                <p class="pricing_sentence">Pass Télétravail Mobilité <br>
+                Réseau Tiers Lieux d’Occitanie
+                </p>
+                <ul class="pricing_list">
+                    <li class="pricing_feature">30 Pass à utiliser dans les Tiers Lieux partenaires</li>
+                    <li class="pricing_feature">Soit 1 journée, soit 2 demi journées</li>
+                </ul>
+                <p class="pricing_sentence">Pass Atelier Expert <br>
+                Commission Télétravail & Espaces Collaboratifs
+                </p>
+                <ul class="pricing_list">
+                    <li class="pricing_feature">30 Pass à utiliser dans les Tiers Lieux partenaires</li>
+                    <li class="pricing_feature">Soit 1 journée, soit 2 demi journées</li>
+                </ul>
+                <a class="pricing_action text-center" href="#.">Choose plan</a>
+            </div>
+            <div class="pricing_item active">
+                <h3 class="pricing_title">Popular</h3>
+                <div class="pricing_price"><span class="pricing_currency">$</span>29,90</div>
+                <p class="pricing_sentence">Suitable for small businesses with up to 5 employees</p>
+                <ul class="pricing_list">
+                    <li class="pricing_feature">Unlimited calls</li>
+                    <li class="pricing_feature">Free hosting</li>
+                    <li class="pricing_feature">10 hours of support</li>
+                    <li class="pricing_feature">Social media integration</li>
+                    <li class="pricing_feature">1GB of storage space</li>
+                </ul>
+                <a class="pricing_action text-center" href="#.">Choose plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <hr>
     </div>
   </div>
