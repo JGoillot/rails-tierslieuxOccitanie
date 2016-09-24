@@ -1,0 +1,11 @@
+.addnew {
+  width: 100%;
+}
+
+.department {
+  margin: 12px;
+  &:hover {
+    background-color: #07AAA5;
+    color: white;
+  }
+}

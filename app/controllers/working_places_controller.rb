@@ -41,4 +41,8 @@ class WorkingPlacesController < ApplicationController
     params.require(:working_place).permit(:name, :address, :city, :country, :zip_code, :contact_name, :phone, :mail, :website_url, :capacity, :oppening_time, :price, :photo)
   end
 
+  def search_params
+    params.require(:working_places).permit(:zip_code)
+  end
+
 end
