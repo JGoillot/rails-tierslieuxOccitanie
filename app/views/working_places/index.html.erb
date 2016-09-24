@@ -12,19 +12,19 @@
 
   <%= link_to "Ajoutez un tiers lieux", new_working_place_path , class: "btn btn-default addnew" %> <br>
 
-  <%= link_to "09 - Ariège", new_working_place_path , class: "btn btn-default department" %>
-  <%= link_to "11 - Aude", new_working_place_path , class: "btn btn-default department" %>
-  <%= link_to "12 - Aveyron", new_working_place_path , class: "btn btn-default department" %>
-  <%= link_to "30 - Gard", new_working_place_path , class: "btn btn-default department" %>
+  <%= link_to "09 - Ariège", working_places_path(zip_code: '09'), method: :get , class: "btn btn-default department" %>
+  <%= link_to "11 - Aude", working_places_path(zip_code: '11'), method: :get , class: "btn btn-default department" %>
+  <%= link_to "12 - Aveyron", working_places_path(zip_code: '12'), method: :get , class: "btn btn-default department" %>
+  <%= link_to "30 - Gard", working_places_path(zip_code: '30'), method: :get , class: "btn btn-default department" %>
   <%= link_to "31 - Haute-Garonne", working_places_path(zip_code: '31'), method: :get , class: "btn btn-default department" %>
-  <%= link_to "32 - Gers", new_working_place_path , class: "btn btn-default department" %>
-  <%= link_to "34 - Hérault", new_working_place_path , class: "btn btn-default department" %>
-  <%= link_to "46 - Lot", new_working_place_path , class: "btn btn-default department" %>
-  <%= link_to "48 - Lozère", new_working_place_path , class: "btn btn-default department" %>
-  <%= link_to "65 - Hautes-Pyrénées", new_working_place_path , class: "btn btn-default department" %>
-  <%= link_to "66 - Pyrénées-Orientales", new_working_place_path , class: "btn btn-default department" %>
-  <%= link_to "81 - Tarn", new_working_place_path , class: "btn btn-default department" %>
-  <%= link_to "82 - Tarn-et-Garonne", new_working_place_path , class: "btn btn-default department" %>
+  <%= link_to "32 - Gers", working_places_path(zip_code: '32'), method: :get , class: "btn btn-default department" %>
+  <%= link_to "34 - Hérault", working_places_path(zip_code: '34'), method: :get , class: "btn btn-default department" %>
+  <%= link_to "46 - Lot", working_places_path(zip_code: '46'), method: :get , class: "btn btn-default department" %>
+  <%= link_to "48 - Lozère", working_places_path(zip_code: '48'), method: :get , class: "btn btn-default department" %>
+  <%= link_to "65 - Hautes-Pyrénées", working_places_path(zip_code: '65'), method: :get , class: "btn btn-default department" %>
+  <%= link_to "66 - Pyrénées-Orientales", working_places_path(zip_code: '66'), method: :get , class: "btn btn-default department" %>
+  <%= link_to "81 - Tarn", working_places_path(zip_code: '81'), method: :get , class: "btn btn-default department" %>
+  <%= link_to "82 - Tarn-et-Garonne", working_places_path(zip_code: '82'), method: :get , class: "btn btn-default department" %>
 
     <div class="row">
       <% @working_places.each do |place| %>
