@@ -2,7 +2,12 @@ class WorkingPlacesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show, :new, :create]
 
   def index
-    @working_places = WorkingPlace.where.not(latitude: nil, longitude: nil).where(statut: true)
+    if search_params[:zip_code].blank?
+      @working_places = WorkingPlace.where.not(latitude: nil, longitude: nil).where(statut: true)
+    else
+      # @working_places = WorkingPlace.where.not(latitude: nil, longitude: nil).where(statut: true).where("zip_code REGEXP ?", 'A\#{search_params["zip_code"]'})
+    end
+
 
     @hash = Gmaps4rails.build_markers(@working_places) do |working_place, marker|
       marker.lat working_place.latitude
@@ -42,7 +47,7 @@ class WorkingPlacesController < ApplicationController
   end
 
   def search_params
-    params.require(:working_places).permit(:zip_code)
+    params.permit(:zip_code)
   end
 
 end
