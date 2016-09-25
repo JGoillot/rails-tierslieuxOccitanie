@@ -83,6 +83,8 @@
   color: #9CA0A9;
   border-bottom: 3px solid rgba(139, 144, 157, 0.18);
   font-weight: bold;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .pricing_tenzin .pricing_list {
@@ -129,4 +131,22 @@
 .pricing_item.dark_gray .pricing_action {
     background: #969696;
 }
+
+.pass-desc {
+  font-size: 14px;
+  color: #8b909d;
+  text-align: justify;
+  text-justify: inter-word;
+}
 /* ---------- Pricing Tables ---------- */
+
+/* ---------- MODAL PASS ---------- */
+.contact-modal {
+  .contact-title {
+    color: red;
+    font-size: 1.17em;
+    color: #444;
+  }
+}
+
+

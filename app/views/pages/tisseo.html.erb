@@ -26,7 +26,7 @@
       <div class="col-md-6 col-md-offset-3 text-awards">
         <p> Depuis plusieurs années, le <%= link_to "SMTC-Tisséo", "http://www.smtc-tisseo.fr/", :target => "_blank" %> accompagne et conseille les entreprises et administrations qui souhaitent mettre en place une démarche éco responsable à travers un plan de mobilité. </p>
         <p> Le <%= link_to "SMTC-Tisséo", "http://www.smtc-tisseo.fr/", :target => "_blank" %> valorise ces actions en distinguant les entreprises exemplaires en matière d’écomobilité par les Trophées Ecomobilité. </p>
-        <p> La Mêlée et la Commission Télétravail & Espaces Collaboratifs sont partenaires de l’édition 2016 des <b>Trophées Ecomobilité</b> via la contribution aux dotations des lauréats </p>
+        <p> La Mêlée et la Commission Télétravail & Espaces Collaboratifs sont partenaires de l’édition 2016 des <b>Trophées Ecomobilité</b> via la contribution aux dotations des lauréats sous forme de Pass </p>
       </div>
     </div>
 
@@ -35,72 +35,195 @@
         <div class="col-md-12">
           <div class="pricing pricing_tenzin">
             <div class="pricing_item dark_gray">
-                <h3 class="pricing_title">Trophées Or</h3>
-                <div class="pricing_price"><span class="pricing_currency"></span>Héliopole Balma</div>
-                <p class="pricing_sentence">Pass Télétravail Mobilité <br>
-                Réseau Tiers Lieux d’Occitanie
+                <h3 class="pricing_title">Pass Télétravail / Mobilité</h3>
+                <div class="pricing_price"><span class="pricing_currency"></span>Réseau Tiers Lieux d’Occitanie</div>
+                <p class="pricing_sentence">A utiliser dans les Tiers Lieux partenaires de l’opération <br> Soit 1 journée, soit 2 demi-journées
+
                 </p>
                 <ul class="pricing_list">
-                    <li class="pricing_feature">30 Pass à utiliser dans les Tiers Lieux partenaires</li>
-                    <li class="pricing_feature">Soit 1 journée, soit 2 demi journées</li>
+                    <p class="pass-desc">Les « Pass Télétravail/Mobilité » que vous avez gagnés vous permettent de découvrir un nouveau lieu de travail où vous pourrez vous installer ponctuellement et bénéficier de tous les services proposés habituellement aux télétravailleurs.</p>
+                    <p class="pass-desc">21 espaces dits « Tiers Lieux » vous attendent, qu’ils soient sur Toulouse ou dans les départements limitrophes, peut-être proche de votre domicile. </p>
+
                 </ul>
-                <p class="pricing_sentence">Pass Atelier Expert <br>
-                Commission Télétravail & Espaces Collaboratifs
-                </p>
-                <ul class="pricing_list">
-                    <li class="pricing_feature">1 Atelier Expert de 2 h. sur <b>la Responsabilité sociétale et numérique</b> – Par FACE Grand Toulouse</li>
-                </ul>
-                <a class="pricing_action text-center" href="#.">Choose plan</a>
+                <!-- Button trigger modal -->
+                <button type="button" class="pricing_action text-center" data-toggle="modal" data-target="#ModalTélé">
+                  Voir la liste
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="ModalTélé" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Pass Télétravail / Mobilité</h4>
+                      </div>
+                      <div class="modal-body">
+                        <h4>Les Tiers Lieux Partenaires</h4>
+                        <h5> Ariège (09)
+                        <div class="contact-title">
+                          <b>Cap Delta Verniolle – Cap Mirabeau Lavelanet – Cap Couserans Saint Lizier</b>
+                        </div>
+                        <ul>
+                          <li><a href="mailto:contact@ariege-expansion.com?Subject=Pass%20Télétravail%20Mobilité" target="_top">contact@ariege-expansion.com</a></li>
+                          <li>05 61 69 00 09</li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>Pôle d’Innovation COMETES – Lézat-sur-Lèze</b>
+                        </div>
+                        <ul>
+                          <li><a href="mailto:cometes@ccleze.fr?Subject=Pass%20Télétravail%20Mobilité" target="_top">cometes@ccleze.fr</a></li>
+                          <li>09 72 50 69 02</li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>Coworking Rodez</b>
+                        </div>
+                        <ul>
+                          <li><a href="mailto:adeline@hopdid.fr?Subject=Pass%20Télétravail%20Mobilité" target="_top">adeline@hopdid.fr</a></li>
+                          <li><%= link_to "www.coworking-rodez.fr", "//www.coworking-rodez.fr/", target: "_blank" %></li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>La Cantine – Toulouse</b>
+                        </div>
+                        <ul>
+                          <li><a href="mailto:cometes@ccleze.fr?Subject=Pass%20Télétravail%20Mobilité" target="_top">cometes@ccleze.fr</a></li>
+                          <li>09 72 50 69 02</li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>Les Imaginations Fertiles - Toulouse</b>
+                        </div>
+                        <ul>
+                          <li><%= link_to "www.imaginationsfertiles.fr", "//www.imaginationsfertiles.fr/", target: "_blank" %></li>
+                          <li>05 61 40 92 16</li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>Harry Cow - Toulouse</b>
+                        </div>
+                        <ul>
+                          <li><a href="mailto:harry.coworking@gmail.com?Subject=Pass%20Télétravail%20Mobilité" target="_top">harry.coworking@gmail.com</a></li>
+                          <li><%= link_to "www.harrycow.com", "//www.harrycow.com/", target: "_blank" %></li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>Le Périscope – Ramonville-Saint-Agne</b>
+                        </div>
+                        <ul>
+                          <li><a href="mailto:contact@le-periscope.coop?Subject=Pass%20Télétravail%20Mobilité" target="_top">contact@le-periscope.coop</a></li>
+                          <li>05 32 26 26 70</li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>Relais d’Entreprise – Rieux Volvestre, Saint Martory, Grenade</b>
+                        </div>
+                        <ul>
+                          <li><%= link_to "www.relais-entreprises.fr", "//www.relais-entreprises.fr/", target: "_blank" %></li>
+                          <li>06 72 36 02 32</li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>Innoparc - Auch</b>
+                        </div>
+                         <ul>
+                          <li><%= link_to "www.gers.cci.fr/innoparc/", "//www.gers.cci.fr/innoparc//", target: "_blank" %></li>
+                          <li>05 62 60 68 68</li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>Le bureau Samantanais</b>
+                        </div>
+                        <ul>
+                          <li><a href="mailto:contact@lebureausamatanais.fr?Subject=Pass%20Télétravail%20Mobilité" target="_top">contact@lebureausamatanais.fr</a></li>
+                          <li>05 62 59 71 02</li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>Coworking Tarn – Castres, Albi, Mazamet, Gaillac, Aussillon</b>
+                        </div>
+                        <ul>
+                          <li><%= link_to "http://coworking-tarn.com/", "http://coworking-tarn.com//", target: "_blank" %></li>
+                          <li><a href="mailto:contact@cowork-in-tarn.com?Subject=Pass%20Télétravail%20Mobilité" target="_top">contact@cowork-in-tarn.com</a></li>
+                          <li>07 89 08 49 08</li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
+
             <div class="pricing_item active">
-                <h3 class="pricing_title">Trophées Or</h3>
-                <div class="pricing_price"><span class="pricing_currency"></span>SAFRAN</div>
-                <p class="pricing_sentence">Pass Télétravail Mobilité <br>
-                Réseau Tiers Lieux d’Occitanie</p>
-                <ul class="pricing_list">
-                    <li class="pricing_feature">30 Pass à utiliser dans les Tiers Lieux partenaires</li>
-                    <li class="pricing_feature">Soit 1 journée, soit 2 demi journées / Pass</li>
-                </ul>
-                <p class="pricing_sentence">Pass Atelier Expert <br>
-                Commission Télétravail & Espaces Collaboratifs</p>
-                <ul class="pricing_list">
-                    <li class="pricing_feature">1 Atelier Expert de 2 h. sur <b>le Management à distance</b> – Par Comètes, Espace d’Innovation à Lézat-sur-Lèze (09</li>
-                </ul>
-                <a class="pricing_action text-center" href="#.">Choose plan</a>
-            </div>
-          </div>
-          <div class="pricing pricing_tenzin">
-            <div class="pricing_item dark_gray">
-                <h3 class="pricing_title">Trophées Or</h3>
-                <div class="pricing_price"><span class="pricing_currency"></span>Héliopole Balma</div>
-                <p class="pricing_sentence">Pass Télétravail Mobilité <br>
-                Réseau Tiers Lieux d’Occitanie
+                <h3 class="pricing_title">Pass Atelier Expert</h3>
+                <div class="pricing_price"><span class="pricing_currency"></span>Commission Télétravail & Espaces Collaboratifs</div>
+                <p class="pricing_sentence">Les experts de la Commission Télétravail & Espaces Collaboratifs offrent, à chacun des lauréats 1 atelier expert de 2 heures  <br>
+                Autour d’une thématique liée à la sensibilisation aux nouvelles organisations du travail.
                 </p>
                 <ul class="pricing_list">
-                    <li class="pricing_feature">30 Pass à utiliser dans les Tiers Lieux partenaires</li>
-                    <li class="pricing_feature">Soit 1 journée, soit 2 demi journées</li>
+                    <p class="pass-desc">Chaque lauréat se voit ainsi attribué 1 Pass Ateliers expert (voir votre diplôme) à charge pour vous de prendre directement contact avec le prestataire afin de définir les dates et le contenu précis de son intervention.</p>
                 </ul>
-                <p class="pricing_sentence">Pass Atelier Expert <br>
-                Commission Télétravail & Espaces Collaboratifs
-                </p>
-                <ul class="pricing_list">
-                    <li class="pricing_feature">30 Pass à utiliser dans les Tiers Lieux partenaires</li>
-                    <li class="pricing_feature">Soit 1 journée, soit 2 demi journées</li>
-                </ul>
-                <a class="pricing_action text-center" href="#.">Choose plan</a>
-            </div>
-            <div class="pricing_item active">
-                <h3 class="pricing_title">Popular</h3>
-                <div class="pricing_price"><span class="pricing_currency">$</span>29,90</div>
-                <p class="pricing_sentence">Suitable for small businesses with up to 5 employees</p>
-                <ul class="pricing_list">
-                    <li class="pricing_feature">Unlimited calls</li>
-                    <li class="pricing_feature">Free hosting</li>
-                    <li class="pricing_feature">10 hours of support</li>
-                    <li class="pricing_feature">Social media integration</li>
-                    <li class="pricing_feature">1GB of storage space</li>
-                </ul>
-                <a class="pricing_action text-center" href="#.">Choose plan</a>
+                <!-- Button trigger modal -->
+                <button type="button" class="pricing_action text-center" data-toggle="modal" data-target="#ModalAtelier">
+                  Voir la liste
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="ModalAtelier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Pass Atelier Expert</h4>
+                      </div>
+                      <div class="modal-body">
+                        <h4>Les contacts</h4>
+                        <div class="contact-title">
+                          <b>Citica – Pascal Rassat</b>
+                        </div>
+                        <ul>
+                          <li><a href="mailto:citica@citica.com?Subject=Pass%20Atelier%20Expert" target="_top">citica@citica.com</a></li>
+                          <li>05 62 47 18 22</li>
+                          <li><%= link_to "www.citica.com", "//www.citica.com/", target: "_blank" %></li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>FACE Grand Toulouse – Isabelle Lestanguet</b>
+                        </div>
+                        <ul>
+                          <li><a href="mailto:i.lestanguet@fondationface.org?Subject=Pass%20Atelier%20Expert" target="_top">i.lestanguet@fondationface.org</a></li>
+                          <li>05 34 42 07 22 - 06 65 36 36 06</li>
+                          <li><%= link_to "www.facegrandtoulouse.org", "//www.facegrandtoulouse.org/", target: "_blank" %></li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>Cabinet Barthélémy - Matthieu Barthès</b>
+                        </div>
+                        <ul>
+                          <li><a href="mailto:mbarthes@barthelemy-avocats.com?Subject=Pass%20Atelier%20Expert" target="_top">mbarthes@barthelemy-avocats.com</a></li>
+                          <li>05 34 41 90 60</li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>Comètes – Lionel Laguna</b>
+                        </div>
+                        <ul>
+                          <li><a href="mailto:lionel@ccleze.fr?Subject=Pass%20Atelier%20Expert" target="_top">lionel@ccleze.fr</a></li>
+                          <li>06 74 29 12 43</li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>Co Consult Group – Philippe Bresolin</b>
+                        </div>
+                        <ul>
+                          <li><a href="mailto:Ph.bresolin@co-consult-group.com?Subject=Pass%20Atelier%20Expert" target="_top">Ph.bresolin@co-consult-group.com</a></li>
+                          <li>06 22 60 73 99</li>
+                        </ul>
+                        <div class="contact-title">
+                          <b>EMA – Annie Kirner</b>
+                        </div>
+                        <ul>
+                          <li><a href="mailto:annie.kirner@ematopie.com?Subject=Pass%20Atelier%20Expert" target="_top">annie.kirner@ematopie.com</a></li>
+                          <li>05 61 62 33 67 – 06 743 744 35</li>
+                          <li><%= link_to "www.ematopie.com", "//www.ematopie.com/", target: "_blank" %></li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
