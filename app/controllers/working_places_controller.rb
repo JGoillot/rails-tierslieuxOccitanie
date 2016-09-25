@@ -34,8 +34,18 @@ class WorkingPlacesController < ApplicationController
     end
   end
 
+  def edit
+    @working_place = WorkingPlace.find(params[:id])
+  end
+
   def update
     @working_place = WorkingPlace.find(params[:id])
+    @working_place.update(working_place_params)
+    redirect_to working_places_path
+  end
+
+  def validate
+    @working_place = WorkingPlace.find(params[:working_place_id])
     @working_place.update(statut: params[:statut])
     redirect_to working_places_path
   end
@@ -43,7 +53,7 @@ class WorkingPlacesController < ApplicationController
   private
 
   def working_place_params
-    params.require(:working_place).permit(:name, :address, :city, :country, :zip_code, :contact_name, :phone, :mail, :website_url, :capacity, :oppening_time, :price, :photo)
+    params.require(:working_place).permit(:name, :address, :city, :country, :zip_code, :contact_name, :phone, :mail, :website_url, :capacity, :oppening_time, :price, :photo, :statut, :cellphone, :description)
   end
 
   def search_params

@@ -10,7 +10,10 @@ Rails.application.routes.draw do
   get 'new' => 'pages#after_fill'
   get 'prix' => 'pages#price'
 
-  resources :working_places
+  resources :working_places do
+    put 'validate'
+  end
+
   mount Attachinary::Engine => "/attachinary"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

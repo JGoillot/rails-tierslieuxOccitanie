@@ -9,7 +9,8 @@ class PagesController < ApplicationController
   end
 
   def dashboard
-    @working_places = WorkingPlace.where(statut: false)
+    @working_places = WorkingPlace.where(statut: [false, nil])
+    @tiers_lieux = WorkingPlace.where(statut: true)
   end
 
   def after_fill

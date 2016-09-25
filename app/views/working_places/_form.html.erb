@@ -3,18 +3,38 @@
     <%= simple_form_for @working_place do |f| %>
       <%= f.error_notification %>
       <%= f.input :name %>
+      <%= f.input :description %>
       <%= f.input :photo, as: :attachinary %>
       <%= f.input :address %>
+      <div class="col-md-3">
       <%= f.input :zip_code %>
+      </div>
+      <div class="col-md-5">
       <%= f.input :city %>
+      </div>
+      <div class="col-md-4">
       <%= f.input :country, priority: [ 'FR' ] %>
+      </div>
+
       <%= f.input :contact_name %>
+      <div class="col-md-6">
       <%= f.input :phone %>
+      </div>
+      <div class="col-md-6">
+      <%= f.input :cellphone %>
+      </div>
+      <div class="col-md-6">
       <%= f.input :mail %>
+      </div>
+      <div class="col-md-6">
       <%= f.input :website_url %>
-      <%= f.input :capacity %>
+      </div>
+      <div class="col-md-6">
       <%= f.input :oppening_time %>
+      </div>
+      <div class="col-md-6">
       <%= f.input :price %>
+      </div>
       <%= f.button :submit, class: "btn btn-primary" %>
       <% end %>
     </div>

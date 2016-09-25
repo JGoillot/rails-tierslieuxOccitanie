@@ -1,20 +1,42 @@
+<%= render 'shared/navbar' %>
+
 <div class="container">
+  <div class="title"></div>
+
+
   <div class="text-center">
-  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+    <h2>Administration – Tiers Lieux Occitanie</h2>
 
-    <h1> I'm a Dashboard </h1>
+    <div class="col-md-6">
+      <h4>Tiers-Lieux en attende de validation</h4>
+      <div class="waiting-list">
+        <% @working_places.each do |place| %>
+          <%= link_to working_place_path(place) do %>
+            <%= place.name %>
+          <% end %>
+          <%= link_to working_place_validate_path(place, :statut => true), :method => :put do %>
+            <i class="fa fa-check" aria-hidden="true"></i>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
 
-    <% @working_places.each do |place| %>
-      <%= link_to "Valid ?", working_place_path(place, :statut => true), :method => :put %>
-        <div class="on-off">
-          <div class="toggleWrapper">
-            <input type="checkbox" id="dn" class="dn"/>
-            <label for="dn" class="toggle"><span class="toggle__handler"></span></label>
-          </div>
+    <div class="col-md-6">
+      <h4>Tiers-Lieux membre du réseaux</h4>
+      <div class="waiting-list">
+        <% @tiers_lieux.each do |place| %>
+        <div class="member">
+          <%= link_to working_place_path(place) do %>
+            <%= place.name %>
+          <% end %>
+          <%= link_to edit_working_place_path(place) do %>
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+          <% end %>
         </div>
-      <%= place.name %>
+        <% end %>
+      </div>
+    </div>
 
-    <% end %>
   </div>
 </div>
 

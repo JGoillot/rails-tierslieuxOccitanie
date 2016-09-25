@@ -2,6 +2,11 @@
 
 <div class="navigation navbar-fixed-top">
   <div class="container">
+    <div class="logo">
+      <%= link_to root_path do %>
+        <%= image_tag "logo.png" %>
+      <% end %>
+    </div>
     <div class="menu">
       <%= link_to "QUI ?", about_us_path, class: "nav-title hvr-bounce-in" %>
       <%= link_to "LE RÉSEAU", le_reseau_path, class: "nav-title hvr-bounce-in" %>
@@ -27,6 +32,7 @@
         <p> Depuis plusieurs années, le <%= link_to "SMTC-Tisséo", "http://www.smtc-tisseo.fr/", :target => "_blank" %> accompagne et conseille les entreprises et administrations qui souhaitent mettre en place une démarche éco responsable à travers un plan de mobilité. </p>
         <p> Le <%= link_to "SMTC-Tisséo", "http://www.smtc-tisseo.fr/", :target => "_blank" %> valorise ces actions en distinguant les entreprises exemplaires en matière d’écomobilité par les Trophées Ecomobilité. </p>
         <p> La Mêlée et la Commission Télétravail & Espaces Collaboratifs sont partenaires de l’édition 2016 des <b>Trophées Ecomobilité</b> via la contribution aux dotations des lauréats sous forme de Pass </p>
+        <p><%= link_to "Télécharger le livret d'informations TISSEO / La Mêlée", "livret.pdf", :target => "_blank" %> </p>
       </div>
     </div>
 
@@ -37,7 +43,7 @@
             <div class="pricing_item dark_gray">
                 <h3 class="pricing_title">Pass Télétravail / Mobilité</h3>
                 <div class="pricing_price"><span class="pricing_currency"></span>Réseau Tiers Lieux d’Occitanie</div>
-                <p class="pricing_sentence">A utiliser dans les Tiers Lieux partenaires de l’opération <br> Soit 1 journée, soit 2 demi-journées
+                <p class="pricing_sentence">Le Pass Télétravail et Mobilité est à utiliser dans l'un des Tiers Lieux partenaires de l’opération. <br> Soit 1 journée, soit 2 demi-journées
 
                 </p>
                 <ul class="pricing_list">
@@ -60,7 +66,6 @@
                       </div>
                       <div class="modal-body">
                         <h4>Les Tiers Lieux Partenaires</h4>
-                        <h5> Ariège (09)
                         <div class="contact-title">
                           <b>Cap Delta Verniolle – Cap Mirabeau Lavelanet – Cap Couserans Saint Lizier</b>
                         </div>
@@ -151,11 +156,10 @@
             <div class="pricing_item active">
                 <h3 class="pricing_title">Pass Atelier Expert</h3>
                 <div class="pricing_price"><span class="pricing_currency"></span>Commission Télétravail & Espaces Collaboratifs</div>
-                <p class="pricing_sentence">Les experts de la Commission Télétravail & Espaces Collaboratifs offrent, à chacun des lauréats 1 atelier expert de 2 heures  <br>
-                Autour d’une thématique liée à la sensibilisation aux nouvelles organisations du travail.
+                <p class="pricing_sentence">Les experts de la Commission Télétravail & Espaces Collaboratifs offrent, à chacun des lauréats 1 atelier expert de 2 heures autour d’une thématique liée à la sensibilisation aux nouvelles organisations du travail.
                 </p>
                 <ul class="pricing_list">
-                    <p class="pass-desc">Chaque lauréat se voit ainsi attribué 1 Pass Ateliers expert (voir votre diplôme) à charge pour vous de prendre directement contact avec le prestataire afin de définir les dates et le contenu précis de son intervention.</p>
+                    <p class="pass-desc">Chaque lauréat se voit ainsi attribué 1 Pass Ateliers expert (<b>voir votre diplôme</b>) à charge pour vous de prendre directement contact avec le prestataire afin de définir les dates et le contenu précis de son intervention.</p>
                 </ul>
                 <!-- Button trigger modal -->
                 <button type="button" class="pricing_action text-center" data-toggle="modal" data-target="#ModalAtelier">
