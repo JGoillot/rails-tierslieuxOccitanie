@@ -21,19 +21,6 @@
   </div>
 </div>
 
-<% array_picture = [
-  "https://static.pexels.com/photos/7374/startup-photos-large.jpg",
-  "https://static.pexels.com/photos/51171/pexels-photo-51171-large.jpeg",
-  "https://static.pexels.com/photos/7350/startup-photos-large.jpg",
-  "https://static.pexels.com/photos/154/people-apple-iphone-writing-large.jpg",
-  "https://static.pexels.com/photos/7361/startup-photos-large.jpg",
-  "https://static.pexels.com/photos/7355/startup-photos-large.jpg",
-  "https://static.pexels.com/photos/8169/pexels-photo-large.jpg",
-  "https://static.pexels.com/photos/6374/flowers-desk-office-vintage-large.jpg",
-  "https://static.pexels.com/photos/23978/pexels-photo-23978-large.jpg",
-  "https://static.pexels.com/photos/4428/office-table-home-room-large.jpeg"
-  ] %>
-
 <div class="network">
   <div class="container">
     <div class="feature">
@@ -96,15 +83,6 @@
 <div class="container">
   <div class="text-center">
     <hr>
-    <div class="tl-list">
-      <div id="owl-example" class="owl-carousel">
-      <% @working_places.each do |place| %>
-        <div>
-        <%= image_tag array_picture.sample, class: "img-owl" %><br>
-        <%= place.name %>
-        </div>
-      <% end %>
-      </div>
-    </div>
+    <%= render 'shared/gallery', working_places: @working_places %>
   </div>
 </div>

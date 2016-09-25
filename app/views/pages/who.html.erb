@@ -106,13 +106,6 @@
 
     <hr>
 
-    <div id="owl-example" class="owl-carousel">
-    <% @working_places.each do |place| %>
-      <div>
-      <%= image_tag array_picture.sample, class: "img-owl" %><br>
-      <%= place.name %>
-      </div>
-    <% end %>
-    </div>
+    <%= render 'shared/gallery', working_places: @working_places %>
   </div>
 </div>

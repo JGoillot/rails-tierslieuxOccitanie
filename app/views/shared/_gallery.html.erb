@@ -1,0 +1,12 @@
+<div id="owl-example" class="owl-carousel">
+    <% working_places.each do |place| %>
+      <div>
+      <%= link_to working_place_path(place) do %>
+      <%= image_tag place.image, class: "img-owl" %><br>
+      <div class="name">
+        <%= place.name %>
+      </div>
+      <% end %>
+      </div>
+    <% end %>
+    </div>
