@@ -1,7 +1,7 @@
 class WorkingPlace < ApplicationRecord
   include CloudinaryHelper
   has_attachment :photo
-  geocoded_by :address
+  geocoded_by :full_address
   after_validation :geocode, if: :address_changed?
 
   def image
@@ -25,6 +25,12 @@ class WorkingPlace < ApplicationRecord
 
       image_base + image_link
     end
+  end
+
+  private
+
+  def full_address
+    "#{address} #{zip_code} #{city}"
   end
 
 end

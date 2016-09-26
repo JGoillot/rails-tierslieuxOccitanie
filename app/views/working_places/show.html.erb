@@ -4,7 +4,7 @@
   <div class="title"></div>
 
   <div class="head_show">
-    <div class="all_link"> <%= link_to "All offices", working_places_path, class: "return" %> </div>
+    <div class="all_link"> <%= link_to "Tous les Tiers Lieux", working_places_path, class: "return" %> </div>
     <div> <i class="fa fa-chevron-right" aria-hidden="true"></i> </div>
     <div class="city"> <%= @working_place.city %> </div>
   </div>
@@ -26,7 +26,9 @@
         </div>
         <hr>
         <div class="baseline">
-          Tiers Lieux Occitanie is best experienced in person. Fill out your information to schedule a visit.
+          <p><i class="fa fa-link" aria-hidden="true"></i> <%= link_to @working_place.website_url, @working_place.website_url, target: "_blank" %></p>
+          <p><i class="fa fa-phone" aria-hidden="true"></i> <%= @working_place.phone %> </p>
+          <p><i class="fa fa-envelope-o" aria-hidden="true"></i> <%= @working_place.mail %> </p>
         </div>
       </div>
     </div>
