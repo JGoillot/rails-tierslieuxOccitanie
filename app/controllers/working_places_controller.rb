@@ -5,7 +5,7 @@ class WorkingPlacesController < ApplicationController
     if search_params[:zip_code].blank?
       @working_places = WorkingPlace.where.not(latitude: nil, longitude: nil).where(statut: true)
     else
-      @working_places = WorkingPlace.where.not(latitude: nil, longitude: nil).where(statut: true).where("zip_code like ?", "%#{search_params[:zip_code]}%")
+      @working_places = WorkingPlace.where.not(latitude: nil, longitude: nil).where(statut: true).where("zip_code like ?", "#{search_params[:zip_code]}%")
     end
 
 
