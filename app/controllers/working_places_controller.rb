@@ -12,8 +12,12 @@ class WorkingPlacesController < ApplicationController
     @hash = Gmaps4rails.build_markers(@working_places) do |working_place, marker|
       marker.lat working_place.latitude
       marker.lng working_place.longitude
-      # marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
+      marker.infowindow render_to_string(partial: "/working_places/map_box", locals: { working_place: working_place })
     end
+  end
+
+  def gmaps4rails_infowindow
+      " > #{self.name}"
   end
 
   def show
