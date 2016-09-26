@@ -49,9 +49,13 @@
     div {
       margin-right: 8px;
     }
-  .baseline {
-    padding-left: 22px;
   }
+  .baseline {
+    padding-top: 22px;
+    padding-left: 22px;
+    .fa {
+      padding-right: 5px;
+    }
   }
   hr {
     height: 3px;

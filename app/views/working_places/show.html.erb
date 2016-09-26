@@ -42,20 +42,20 @@
     <div class="col-md-6 col-md-offset-5">
       <div class="work-content">
         <div class="introduction">
-          With a perfect location in the Financial District, this San Francisco office space maintains a relaxed vibe and a productive atmosphere. Enjoy stunning views of the city through the huge windows, or make use of our outdoor patio space for networking events. The five floors dedicated to WeWork consist of numerous generously proportioned offices that are perfect for businesses ranging from startups to established companies. It sits on the border of Chinatown, and the incredible range of Asian cuisine means no more boring lunches at your desk. One of the city’s iconic trolleys runs right in front of the building along California Street. For a great location, access to transportation, and a tight-knit community, this coworking space is hard to beat.
+          <%= @working_place.description %>
         </div>
 
-        <h3 class="section-title h3Underlined"> HERE TO HELP </h3>
+        <h3 class="section-title h3Underlined"> VOTRE CORRESPONDANT</h3>
         <div class="about-office">
           <div class="row">
             <div class="col-md-4">
-            <%= image_tag("https://res.cloudinary.com/wework/image/upload/c_fill,h_500,w_500/v1441905535/production/profile/avatar/ada13660-0d36-0133-912a-0e634e85779a.jpg?auto=compress%2Cformat&w=1200", class: "picture") %>
+            <%= image_tag("http://sas.gamer-space.net/Images/no-avatar.png", class: "picture") %>
             </div>
             <div class="col-md-8">
               <div class="manager">
-                <h4 class="name"> <%= @working_place.contact_name %> Jérémy Goillot </h4>
+                <h4 class="name"> <%= @working_place.contact_name %></h4>
                 <h6 class="city"> <%= @working_place.city %> </h6>
-                <p> The community management team adds a personal, professional touch to each WeWork building and is committed to empowering members in every possible way. </p>
+                <p> </p>
               </div>
             </div>
           </div>
@@ -65,7 +65,8 @@
   </div>
 </div>
 
-<div class="options-works">
+<div class="title"></div>
+<!-- <div class="options-works">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-5">
@@ -152,7 +153,7 @@
     </div>
   </div>
 
-</div>
+</div> -->
 
 
 
@@ -174,5 +175,5 @@
     <%= @working_place.price %>  -->
 
 
-  <%= link_to "Voir l'ensemble des tiers lieux", working_places_path , class: "btn btn-default" %>
+
 
