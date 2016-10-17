@@ -32,7 +32,7 @@
       <div class="col-md-4">
         <div class="card">
         <%= link_to working_place_path(place) do %>
-            <div class="image" style="background-image: url('<%= cl_image_path place.photo.path, height: 300, width: 400, crop: :fill %>');"></div>
+            <div class="image" style="background-image: url('<%= place.image %>');"></div>
             <div class="description">
                 <div class="row">
                   <div class="col-sm-12"><h4><%= place.name %></h4></div>
