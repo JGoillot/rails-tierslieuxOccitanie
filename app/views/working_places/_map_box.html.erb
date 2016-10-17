@@ -4,5 +4,10 @@
   <p><i class="fa fa-link" aria-hidden="true"></i> <%= link_to working_place.website_url, "http://#{working_place.website_url}", target: "_blank" %></p>
   <p><i class="fa fa-phone" aria-hidden="true"></i> <%= working_place.phone %> </p>
   <p><i class="fa fa-envelope-o" aria-hidden="true"></i> <%= working_place.mail %> </p>
-  <%= link_to "Voir", working_place_path(working_place), target: :blank, class: "btn btn-default department" %>
+
+  <% if working_place.member == true %>
+    <%= link_to "Voir", working_place_path(working_place), target: :blank, class: "btn btn-default department" %>
+  <% else %>
+      <p class="no-member">Pas encore membre du réseau</p>
+  <% end %>
 </div>

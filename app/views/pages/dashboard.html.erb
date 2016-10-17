@@ -19,6 +19,17 @@
           <% end %> <br>
         <% end %>
       </div>
+      <h4>Tiers-Lieux non-membre</h4>
+      <div class="waiting-list">
+        <% @non_membres.each do |place| %>
+          <%= link_to working_place_path(place) do %>
+            <%= place.name %>
+          <% end %>
+          <%= link_to working_place_membership_path(place, :member => true), :method => :put do %>
+            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+          <% end %> <br>
+        <% end %>
+      </div>
     </div>
 
     <div class="col-md-6">

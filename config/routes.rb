@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   resources :working_places do
     put 'validate'
+    put 'membership'
   end
 
   mount Attachinary::Engine => "/attachinary"

@@ -3,13 +3,15 @@ class WorkingPlacesController < ApplicationController
 
   def index
     if search_params[:zip_code].blank?
-      @working_places = WorkingPlace.where.not(latitude: nil, longitude: nil).where(statut: true)
+      @working_places = WorkingPlace.where.not(latitude: nil, longitude: nil).where(member: true)
+      @no_member = WorkingPlace.where.not(latitude: nil, longitude: nil).where(statut: true)
     else
-      @working_places = WorkingPlace.where.not(latitude: nil, longitude: nil).where(statut: true).where("zip_code like ?", "#{search_params[:zip_code]}%")
+      @working_places = WorkingPlace.where.not(latitude: nil, longitude: nil).where(member: true).where("zip_code like ?", "#{search_params[:zip_code]}%")
+      @no_member = WorkingPlace.where.not(latitude: nil, longitude: nil).where(statut: true).where("zip_code like ?", "#{search_params[:zip_code]}%")
     end
 
 
-    @hash = Gmaps4rails.build_markers(@working_places) do |working_place, marker|
+    @hash = Gmaps4rails.build_markers(@no_member) do |working_place, marker|
       marker.lat working_place.latitude
       marker.lng working_place.longitude
       marker.infowindow render_to_string(partial: "/working_places/map_box", locals: { working_place: working_place })
@@ -51,6 +53,12 @@ class WorkingPlacesController < ApplicationController
   def validate
     @working_place = WorkingPlace.find(params[:working_place_id])
     @working_place.update(statut: params[:statut])
+    redirect_to working_places_path
+  end
+
+  def membership
+    @working_place = WorkingPlace.find(params[:working_place_id])
+    @working_place.update(member: params[:member])
     redirect_to working_places_path
   end
 
