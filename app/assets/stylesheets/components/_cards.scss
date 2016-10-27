@@ -1,7 +1,7 @@
 
 
 .card {
-  width: 300px;
+  width: 100%;
   position: relative;
   background-color: #fff;
   border-radius: 4px;
@@ -17,7 +17,7 @@
   background-size: cover;
   position: center;
   background-repeat: no-repeat;
-  min-height: 300px;
+  min-height: 270px;
   transition: all .5s ease-in-out;
   &:hover {
     transform: rotate(-3deg) scale(1.1);
