@@ -1,7 +1,7 @@
 <div class="map_box">
   <h3><%= working_place.name %></h3>
   <p>(<%= working_place.zip_code %>) <%= working_place.city %></p>
-  <p><i class="fa fa-link" aria-hidden="true"></i> <%= link_to working_place.website_url, "http://#{working_place.website_url}", target: "_blank" %></p>
+  <p><i class="fa fa-link" aria-hidden="true"></i> <%= link_to working_place.website_url, working_place.website_url, target: "_blank" %></p>
   <p><i class="fa fa-phone" aria-hidden="true"></i> <%= working_place.phone %> </p>
   <p><i class="fa fa-envelope-o" aria-hidden="true"></i> <%= working_place.mail %> </p>
 
