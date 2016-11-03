@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def who
-    @working_places = WorkingPlace.where(statut: true) # Network members
+    @working_places = WorkingPlace.where(member: true) # Network members
   end
 
   def dashboard
@@ -24,7 +24,7 @@ class PagesController < ApplicationController
   end
 
   def network
-    @working_places = WorkingPlace.where(statut: true) # Network members
+    @working_places = WorkingPlace.where(member: true) # Network members
   end
 
 end
