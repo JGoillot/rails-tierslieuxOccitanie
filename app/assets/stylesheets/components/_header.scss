@@ -22,38 +22,67 @@
   }
 }
 
+.nav-fixed {
+  position: fixed;
+}
 .header-low {
   font-size: 16px;
   padding-top: 17px;
   padding-right: 17px;
   color: white;
-  display: flex;
-  justify-content: flex-end;
-  & .title {
-  font-family: 'Quicksand', sans-serif;
-  font-style: normal;
-  padding: 0 17px;
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    .title {
+      border-bottom: 2px solid transparent;
+      color: #fff !important;
+      display: inline-block;
+      margin: 0 0 0 40px;
+      padding: 9px 0;
+      text-decoration: none !important;
+      transition: border-bottom 0.3s;
+      &:hover {
+        border-bottom: 2px solid #34c195;
+        color: #fff !important;
+        text-decoration: none !important;
+      }
+    }
+    .button-header-low {
+      background-color: #34c195;
+      border: none;
+      border-radius: 0;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      overflow: hidden;
+      padding: 16px 20px 14px;
+      text-decoration: none;
+      transition: all 0.3s;
+      transform: translateY(0);
+      margin-left: 25px;
+      &:hover {
+        background-color: #4acea5;
+      }
+    }
   }
-  & .hvr-bounce-in {
-  color: white;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
   }
-  & .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
-  text-decoration: none;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
+
+
 
 
