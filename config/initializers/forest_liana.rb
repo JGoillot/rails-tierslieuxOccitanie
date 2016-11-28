@@ -1,2 +1,2 @@
-ForestLiana.secret_key = '58a5f7abdf0288481a8694132b8a0b43ff0e51b656c24a4aa361c878508d5137'
+ForestLiana.secret_key = ENV['FOREST_KEY']
 ForestLiana.auth_key = '5Q2wC1Mf1CB8r50j03lJ4w'
