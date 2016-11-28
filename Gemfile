@@ -11,7 +11,7 @@ gem 'redis'
 gem "geocoder"
 gem "coffee-rails"
 gem "gmaps4rails"
-gem 'forest_liana'
+gem 'forest_liana', '1.4.4'
 
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
