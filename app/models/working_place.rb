@@ -27,6 +27,10 @@ class WorkingPlace < ApplicationRecord
     end
   end
 
+  before_create do
+    self.departement = self.zip_code[0..1]
+  end
+
   private
 
   def full_address

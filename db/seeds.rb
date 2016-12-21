@@ -7,3 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+WorkingPlace.all.each do |wp|
+  puts wp.name
+  if wp.zip_code.blank? == false
+    wp.departement = wp.zip_code[0..1]
+    wp.save
+  end
+end
