@@ -17,9 +17,9 @@ class WorkingPlacesController < ApplicationController
       marker.infowindow render_to_string(partial: "/working_places/map_box", locals: { working_place: working_place })
       if working_place.member == true
         marker.picture({
-         "url" => "http://www.tierslieuxoccitanie.com/marker_google.png",
-         "width" =>  32,
-         "height" => 32})
+         "url" => "http://i.imgur.com/4WLYmNm.png",
+         "width" =>  36,
+         "height" => 36})
       end
     end
   end
