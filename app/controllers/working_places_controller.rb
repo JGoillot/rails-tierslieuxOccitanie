@@ -18,8 +18,8 @@ class WorkingPlacesController < ApplicationController
       if working_place.member == true
         marker.picture({
          "url" => "http://i.imgur.com/4WLYmNm.png",
-         "width" =>  36,
-         "height" => 36})
+         "width" =>  32,
+         "height" => 32})
       end
     end
   end
