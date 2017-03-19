@@ -1,4 +1,5 @@
 class WorkingPlace < ApplicationRecord
+  after_create :send_welcome_email
   include CloudinaryHelper
   has_attachment :photo
   geocoded_by :full_address
@@ -35,6 +36,10 @@ class WorkingPlace < ApplicationRecord
 
   def full_address
     "#{address} #{zip_code} #{city}"
+  end
+
+  def send_welcome_email
+    UserMailer.welcome(self).deliver_now
   end
 
 end
