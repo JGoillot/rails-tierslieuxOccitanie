@@ -12,6 +12,8 @@ gem "geocoder"
 gem "coffee-rails"
 gem "gmaps4rails"
 gem 'forest_liana', '1.4.4'
+gem "letter_opener", group: :development
+
 
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
